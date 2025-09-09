@@ -213,12 +213,10 @@ pip install pandas numpy transformers tensorflow matplotlib keras seaborn scikit
 
 ## NLP Approaches
 - **Falcon LLM**: A large language model for generating and classifying text, effective for nuanced hate speech detection.
-- **DeBERTa**: Decoder-only BERT variant optimized for understanding text nuances in classification tasks.
-- **BERT**: Bidirectional Encoder Representations from Transformers, pre-trained for contextual text understanding.
-- **RoBERTa**: Robustly optimized BERT approach, improving performance on downstream NLP tasks like classification.
+- **Falcon with Prompt Template**: This approach leverages the Falcon model with a structured prompt template to improve consistency and guide the model’s responses during classification tasks.
+- **Retrieval and Classification**: An adaptation of the RAG (Retrieval-Augmented Generation) framework, where the generation step is replaced with classification. Relevant information is retrieved first, then the model classifies the input based on the retrieved context
 
-See `other_approaches/` for details.
-
+See `other_approaches/` for LLM Approaches.
 ---
 
 ## 📜 License
